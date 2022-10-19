@@ -1,0 +1,11 @@
+import json
+book = { 'title': 'Let Us C',
+'_type': 'short',
+'Authors' : ['Yaswanth Kanetkar', 'sahani'],
+'Pages': 230,
+'price': 560.0,
+'published': True,
+'solution_booklet': None}
+s = json.dumps(book)
+with open('book.json', 'w') as f:
+f.write(s)

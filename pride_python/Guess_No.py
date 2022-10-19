@@ -1,0 +1,5 @@
+x=(2,3,5,8,2)
+y=list(x)
+print(y.insert(1,4))
+x=tuple(y)
+print(x)

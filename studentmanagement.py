@@ -9,7 +9,7 @@ def managementStudent():
     global bye
     bye="\n {}\n# {}\n# ===>BROUGHT To You By <=== #\n#  ===>\n{} #\n {}".format(x,y,y,x)
     print("""
-     ----------------------------------------------------------------
+       -------------------------------------------------------------
      |===============================================================|
      |===============================================================|
        -------------------------------------------------------------
@@ -41,11 +41,11 @@ def managementStudent():
             for students in liststd:
                 print("=> {}".format(students))
     elif(userInput == 3):
-        srcstd = input("Enter Student Name To Search:")
-        if(scrstd in liststd):
-            print("\n=> Record Found of Student {}".format(srcstd))
+        s = input("Enter Student Name To Search:")
+        if s in liststd:
+                        print("\n=> Record Found of Student {}".format(s))
         else:
-            print("\n=> No Record Found of Student {}".format(srcstd))
+            print("\n=> No Record Found of Student {}".format(s))
     elif(userInput == 4):
         rmstd = input("Enter Student Name To Remove:")
         if(rmstd in liststd):
